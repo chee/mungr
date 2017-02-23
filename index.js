@@ -10,7 +10,7 @@ function hasAll(candidate, canon) {
 
 module.exports = mungrs => object => {
   var resultant = Object.assign({}, object)
-  for (key in mungrs) {
+  for (var key in mungrs) {
     if (typeof object[key] != 'undefined') {
       resultant[key] = mungrs[key](object[key])
     }
