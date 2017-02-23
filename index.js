@@ -1,6 +1,6 @@
 function hasAll(candidate, canon) {
   var ok = true
-  for (key in canon) {
+  for (var key in canon) {
     if (!candidate.hasOwnProperty(key)) {
       ok = false
     }
