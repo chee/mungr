@@ -7,4 +7,3 @@ module.exports = mungrs => object => {
   }
   return resultant
 }
-
